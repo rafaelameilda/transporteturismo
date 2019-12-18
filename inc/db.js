@@ -1,6 +1,6 @@
 const mysql = require('mysql2');
-
-/*const connection = mysql.createConnection({
+/*
+const connection = mysql.createConnection({
     host: 'localhost',
     user: 'user',
     database: 'transporteturismo',
@@ -10,11 +10,11 @@ const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
     host: 'us-cdbr-iron-east-05.cleardb.net',
-    user: 'b41627b4d1afdf',
-    database: 'heroku_2ebc4bb05bbf1d3',
-    password: '43960393',
+    user: 'b47b1f0edd0397',
+    database: 'heroku_3e4f2a7e282052e',
+    password: 'bc1d46e6',
     multipleStatements: true
-  });
+});
 
 
 module.exports = connection;
