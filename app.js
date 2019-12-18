@@ -14,7 +14,6 @@ var http = http.Server(app);
 var io = socket(http);
 
 var indexRouter = require('./routes/index')(io);
-var adminRouter = require('./routes/admin')(io);
 
 app.use(session({
     store: new RedisStore({
@@ -37,7 +36,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/admin', adminRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

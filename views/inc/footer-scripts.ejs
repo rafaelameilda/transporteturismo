@@ -30,13 +30,15 @@
 
     let formSubscribe = document.querySelector('#form-subscribe');
 
-    formSubscribe.submitAjax({
-        success: () => {
-            alert('E-mail inscrito!');
-            formSubscribe.reset();
-        },
-        failure: error => {
-            alert(error);
-        }
-    });
+    if (formSubscribe) {
+        formSubscribe.submitAjax({
+            success: () => {
+                alert('E-mail inscrito!');
+                formSubscribe.reset();
+            },
+            failure: error => {
+                alert(error);
+            }
+        });
+    }
 </script>
