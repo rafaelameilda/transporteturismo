@@ -247,7 +247,7 @@ module.exports = (io) => {
   router.get('/services', (req, res, next) => {
 
     res.render('services', Object.assign({}, defaults, {
-      title: 'Serviço - Restaurante Saboroso!',
+      title: 'Serviço - RG Turismo!',
       header: {
         background: 'images/img_bg_1.jpg',
         title: 'É um prazer poder servir!'
